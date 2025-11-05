@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo CPUs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007bff, #00bcd4);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      float: left;
+      width: 15%;
+      background: #161b22;
+      padding: 20px;
+      min-height: 100vh;
+      border-right: 2px solid #00bcd4;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 15px;
+    }
+
+    nav ul li a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    article {
+      float: left;
+      padding: 30px;
+      width: 85%;
+      background-color: #0d1117;
+    }
+
+    article h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #161b22;
+      color: #e6edf3;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+    }
+
+    th, td {
+      text-align: center;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1c2128;
+    }
+
+    tr:hover {
+      background-color: #21262d;
+      transition: 0.3s;
+    }
+
+    img {
+      border-radius: 8px;
+    }
+
+    iframe, video, audio {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,188,212,0.4);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #161b22;
+      padding: 20px;
+      text-align: center;
+      color: #9ba1a6;
+      border-top: 2px solid #007bff;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+      nav {
+        min-height: auto;
+      }
+    }
+
+    /* Tarjetas */
+    .cpu-card {
+      background-color: #161b22;
+      border: 1px solid #007bff;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0,188,212,0.2);
+    }
+
+    .cpu-card h3 {
+      color: #00bcd4;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mundo CPUs</h1>
+    <p>Explora la potencia detrás de cada procesador</p>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#AcercaDe">Acerca de</a></li>
+        <li><a href="#Modelos">Modelos Destacados</a></li>
+        <li><a href="#Comparativa">Comparativa</a></li>
+        <li><a href="#Multimedia">Multimedia</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <section id="Inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a <strong>Mundo CPUs</strong>, el portal donde la velocidad, innovación y eficiencia se encuentran. Conoce los procesadores más potentes del mercado, sus características, ventajas y rendimiento en diferentes escenarios: gaming, diseño, programación o uso cotidiano.</p>
+        <div class="cpu-card">
+          <h3>🔍 Última Tendencia</h3>
+          <p>Los procesadores híbridos de Intel de 14ª generación y la arquitectura “Zen 5” de AMD están redefiniendo el equilibrio entre potencia y eficiencia. Apple, por su parte, continúa revolucionando la integración hardware-software con su chip M3 Max.</p>
+        </div>
+      </section>
+
+      <section id="AcercaDe">
+        <h2>Acerca de</h2>
+        <p>En <strong>Mundo CPUs</strong> analizamos cada detalle de los procesadores modernos: núcleos, hilos, caché, consumo, arquitectura y desempeño térmico. Nuestro objetivo es que elijas la mejor opción según tu presupuesto y tipo de uso.</p>
+        <p>Contamos con un equipo de expertos en hardware que realiza pruebas reales para comparar rendimiento en tareas de productividad, renderizado y gaming.</p>
+      </section>
+
+      <section id="Modelos">
+        <h2>Procesadores Destacados</h2>
+        <table>
+          <tr>
+            <th>Nombre del CPU</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td>Intel Core i9-13900K</td>
+            <td>Intel</td>
+            <td>$620</td>
+            <td><img src="https://nomadaware.com.ec/wp-content/uploads/2022/10/NomadaWare_procesador_intel_core_i9_13900kf4.png" width="100"></td>
+          </tr>
+          <tr>
+            <td>AMD Ryzen 9 7950X</td>
+            <td>AMD</td>
+            <td>$580</td>
+            <td><img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" width="100"></td>
+          </tr>
+          <tr>
+            <td>Apple M3 Max</td>
+            <td>Apple</td>
+            <td>$650</td>
+            <td><img src="https://images.versus.io/objects/apple-m3-max-16-core-cpu-40-core-gpu.front.variety.1698751051953.jpg" width="100"></td>
+          </tr>
+          <tr>
+            <td>Intel Core i7-13700K</td>
+            <td>Intel</td>
+            <td>$430</td>
+            <td><img src="https://http2.mlstatic.com/D_NQ_NP_665228-MLA95537306141_102025-O.webp" width="100"></td>
+          </tr>
+          <tr>
+            <td>AMD Ryzen 7 7800X3D</td>
+            <td>AMD</td>
+            <td>$450</td>
+            <td><img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7800x3d.jpg" width="100"></td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="Comparativa">
+        <h2>Comparativa Técnica</h2>
+        <table>
+          <tr>
+            <th>Modelo</th>
+            <th>Núcleos / Hilos</th>
+            <th>Frecuencia Base</th>
+            <th>TDP</th>
+            <th>Proceso de fabricación</th>
+          </tr>
+          <tr>
+            <td>Intel Core i9-13900K</td>
+            <td>24 / 32</td>
+            <td>3.0 GHz</td>
+            <td>125W</td>
+            <td>Intel 7 (10nm)</td>
+          </tr>
+          <tr>
+            <td>AMD Ryzen 9 7950X</td>
+            <td>16 / 32</td>
+            <td>4.5 GHz</td>
+            <td>170W</td>
+            <td>TSMC 5nm</td>
+          </tr>
+          <tr>
+            <td>Apple M3 Max</td>
+            <td>16 / 16</td>
+            <td>Variable (eficiencia)</td>
+            <td>≈45W</td>
+            <td>TSMC 3nm</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="Multimedia">
+        <h2>Multimedia</h2>
+        <p>Disfruta de contenido sobre hardware y rendimiento.</p>
+
+        <h3>Video Destacado (YouTube)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hmDTIpZsQxM?si=nRBK6mr9uHJb03BC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3>Video Local</h3>
+        <video width="100%" controls>
+          <source src="ruta/a/tu_video.mp4" type="video/mp4">
+          Tu navegador no soporta el tag de video.
+        </video>
+
+        <h3>Audio (Podcast/Música)</h3>
+        <audio controls style="width: 100%;">
+          <source src="ruta/a/tu_audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta el tag de audio.
+        </audio>
+      </section>
+    </article>
+  </section>
+
+  <footer>
+    <h2 id="Contacto">Contacto</h2>
+    <p>Equipo Mundo CPUs<br>Tel: 0981674925</p>
+    <p><a href="mailto:contacto@mundocpus.com">contacto@mundocpus.com</a></p>
+    <p>&copy; 2025 Mundo CPUs - Tecnología al Máximo Rendimiento</p>
+  </footer>
+
+</body>
+</html>
